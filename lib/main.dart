@@ -34,6 +34,9 @@ class _MyLabel extends State<MyLabel> {
         _valueeles = 0;
         pontosnos++;
       }
+      if (_valuenos <= 0) {
+        _valuenos = 0;
+      }
     });
   }
 
@@ -44,6 +47,9 @@ class _MyLabel extends State<MyLabel> {
         _valuenos = 0;
         _valueeles = 0;
         pontoseles++;
+      }
+      if (_valueeles <= 0) {
+        _valueeles = 0;
       }
     });
   }
@@ -195,6 +201,7 @@ class _MyLabel extends State<MyLabel> {
                 ),
               ],
             ),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
