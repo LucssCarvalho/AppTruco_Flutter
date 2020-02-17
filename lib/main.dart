@@ -81,7 +81,7 @@ class _MyLabel extends State<MyLabel> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
                 Text(
-                  "Nós:$_valuenos",
+                  "Nós",
                   style: TextStyle(
                     decoration: TextDecoration.none,
                     fontSize: 30.0,
@@ -90,10 +90,33 @@ class _MyLabel extends State<MyLabel> {
                   ),
                 ),
                 Text(
-                  "Eles:$_valueeles",
+                  "Eles",
                   style: TextStyle(
                     decoration: TextDecoration.none,
                     fontSize: 30.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                Text(
+                  "$_valuenos",
+                  style: TextStyle(
+                    decoration: TextDecoration.none,
+                    fontSize: 80.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  "$_valueeles",
+                  style: TextStyle(
+                    decoration: TextDecoration.none,
+                    fontSize: 80.0,
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
@@ -201,7 +224,6 @@ class _MyLabel extends State<MyLabel> {
                 ),
               ],
             ),
-
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
